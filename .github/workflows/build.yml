@@ -159,8 +159,8 @@ jobs:
           deployment_package: ebs-demo-0.0.1-SNAPSHOT.jar
           
   deploy-prod:
-    #Depends on deploy dev's job
-    needs: deployuat
+    #Depends on deploy prod's job
+    needs: tests
     name: Deploy to prod
     if: github.ref == 'refs/heads/main'
     #Run on Ubuntu using the latest version
