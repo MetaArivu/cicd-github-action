@@ -17,7 +17,7 @@ public class EBSDemoApplication {
 	
 	@GetMapping("/")
 	public ResponseEntity<String> welcome(){
-		return new ResponseEntity<String>("Welcome to EBS Demo v1 deploy", HttpStatus.OK);
+		return new ResponseEntity<String>("Welcome to EBS Demo main branch", HttpStatus.OK);
 	}
 
 }
