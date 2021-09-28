@@ -15,7 +15,7 @@
 	<description>EBS Demo</description>
 	<properties>
 		<java.version>1.8</java.version>
-		<sonar.organization>deepali-arvind-github</sonar.organization>
+		<sonar.organization>metaarivu</sonar.organization>
                <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
