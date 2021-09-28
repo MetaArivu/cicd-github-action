@@ -139,6 +139,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: uat env
+      url: http://cicdspringbootdemouat-env.eba-3yqgdfst.us-east-2.elasticbeanstalk.com/
     steps:
       - name: Download JAR
         #Download the artifact which was uploaded in the build's job
@@ -159,7 +160,7 @@ jobs:
           deployment_package: ebs-demo-0.0.1-SNAPSHOT.jar
           
   deploy-prod:
-    #Depends on deploy dev's job
+    #Depends on deploy prod's job
     needs: tests
     name: Deploy to prod
     if: github.ref == 'refs/heads/main'
