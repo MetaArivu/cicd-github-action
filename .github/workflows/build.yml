@@ -159,7 +159,7 @@ jobs:
           
   deploy-prod:
     #Depends on deploy dev's job
-    needs: deployuat
+    needs: tests
     name: Deploy to prod
     if: github.ref == 'refs/heads/main'
     #Run on Ubuntu using the latest version
